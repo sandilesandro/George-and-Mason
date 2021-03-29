@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <title>George & Mason | Home</title>
+</head>
+<body>
+
+    <div class="hero-div" id="hero-div">
+
+        <div class="menu-bar">
+            <div class="logo">
+            <a href="#"><img src="img/logo.png"></a> 
+            </div>
+            
+            <div class="vertical-line"></div>
+
+            <div class="social-media">
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-pinterest"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                </ul>
+            </div>
+
+            <div class="menu-items">
+                <ul>
+                   <a href="#furniture"> <li>Furniture</li></a>
+                    <a href="#about"><li>About us</li></a>
+                    <li>Showrooms</li>
+                    <a href="#form-container"><li>Contact</li></a>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg"></div>
+        <div class="bg-two"></div>
+
+        <div class="headline">George & Mason</div>
+
+        <div class="headline-two"><h6>About the product</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Exercitationem dolor sapiente nesciunt doloremque <br>. Et vero veniam ducimus nesciunt ipsum officia aspernatur fuga <br>voluptatum nobis, doloribus, unde veritatis molestiae fugiat<br> voluptatem sunt deleniti ipsam ut minima qui eligendi illo facere odio, <br> natus eaque! Asperiores doloribus placeat ut tempora. Magni, tempora mollitia!</p>
+
+            <a href="#"><button class="enquire-btn">Enquire Now<i class="fas fa-arrow-alt-circle-up"></i></button></a>
+
+        </div>
+
+    </div>
+
+    <section class="furniture" id="furniture">
+
+            <div class="block-one">
+                <p>Venito Sleeper Couch</p>
+            </div>
+            <div class="block-two">
+                <p>Antwon L-Shaped Sofa Bed</p>
+            </div>
+            <div class="block-three">
+                <p>
+                    Modern Dynamic Concept Minimalist Sofa</p>
+            </div>
+            <div class="block-four">
+                <p>The Keisha L Shape Sofa</p>
+            </div>
+           
+    </section>
+
+    <section class="furniture-two" id="furniture">
+
+        <div class="block-five">
+            <p>Venito Sleeper Couch</p>
+        </div>
+        <div class="block-six">
+            <p>Antwon L-Shaped Sofa Bed</p>
+        </div>
+        <div class="block-seven">
+            <p>
+                Modern Dynamic Concept Minimalist Sofa</p>
+        </div>
+        <div class="block-eight">
+            <p>The Keisha L Shape Sofa</p>
+        </div>
+       
+</section>
+
+
+
+    <section class="about-us" id="about">
+        <div class="about-us-short"><h2>About us</h2>
+        </div>
+
+        <div class="placeholder"></div>
+        <div class="placeholder-two"></div>
+
+        <h3>10000 <span class="span-2">+ hours </span> <br> of world class craftsmanship</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Tempora, a. Amet temporibus aut quidem optio unde dolor obcaecati. Consequatur, dolorum!</p>
+        <a href="#hero-div"><button class="about-us-btn">Read More</button></a>
+
+        <h2>Random text</h2>
+
+    </section>
+
+    <section class="video-section">
+        <h1>Where the hard <br> work takes place</h1>
+        <video muted loop id="myVideo">
+            <source src="img/myvideo.mp4" type="video/mp4">
+          </video>
+          
+          <!-- Optional: some overlay text to describe the video -->
+          <div class="content">
+            
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" onclick="myFunction()"><i class="far fa-play-circle"></i></button>
+          </div>
+    </section>
+
+
+
+    <section class="form-container" id="form-container">
+        <div class="container"></div>
+            <form>
+                <h2 style="color: #333;">Contact us</h2>
+                <ul>
+                    <li>
+                        <label for="name"><span>Name <span class="required-star">*</span></span></label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail"><span>Email <span class="required-star">*</span></span></label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+
+                    <li>
+                        <label for="mail"><span>Phone <span class="required-star">*</span></span></label>
+                        <input type="number" id="number" name="user_number">
+                    </li>
+                    <li>
+                        <label for="msg"><span>Message</span></label>
+                        <textarea rows="4" cols="50"></textarea>
+                    </li>
+                    <li>
+                        <input type="submit">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+
+    <a id="back-to-top-button"></a>
+
+
+
+    <script>
+        // Get the video
+        var video = document.getElementById("myVideo");
+        
+        // Get the button
+        var btn = document.getElementById("myBtn");
+        
+        // Pause and play the video, and change the button text
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+        </script>
+
+<a href="#hero-div"><button class="back"><i class="fas fa-caret-square-up"></i></button></a>
+
+    
+</body>
+</html>
